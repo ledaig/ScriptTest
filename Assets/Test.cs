@@ -45,13 +45,20 @@ public class Test : MonoBehaviour
                 Debug.Log(test_array[lc]);
               }
 
-              // ---
-              lc = 5;
-              do{
-                Debug.Log("逆順");
-                lc = lc -1;
+              // --
+
+              Debug.Log("逆順 for ");
+              for(lc = 4 ; lc !=-1  ;lc--){
                 Debug.Log(test_array[lc]);
-              } while(lc!=0);
+              }
+
+              // ---
+              //lc = 5;
+              //do{
+              //  Debug.Log("逆順 do while ");
+              //  lc = lc -1;
+              //  Debug.Log(test_array[lc]);
+              //} while(lc!=0);
 
 
        }
