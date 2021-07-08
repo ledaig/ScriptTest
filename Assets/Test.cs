@@ -38,10 +38,18 @@ public class Test : MonoBehaviour
        {
               int[] test_array={10,20,30,40,99};
               int lc=0;
-
+              Debug.Log("正順");
               for(lc =0 ; lc < 5 ;lc++){
                 Debug.Log(test_array[lc]);
               }
+              lc = 5;
+              do{
+                Debug.Log("逆順");
+                lc = lc -1;
+                Debug.Log(test_array[lc]);
+              } while(lc!=0);
+
+
        }
 
        void Start()
@@ -49,6 +57,7 @@ public class Test : MonoBehaviour
           int lc=0;
           Boss lastboss = new Boss();
           array_print();
+          Debug.Log("魔法攻撃");
           for(lc=0 ; lc<11 ; lc++){
             lastboss.Magic();
           }
