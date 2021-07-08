@@ -38,10 +38,14 @@ public class Test : MonoBehaviour
        {
               int[] test_array={10,20,30,40,99};
               int lc=0;
+
+              // ---
               Debug.Log("正順");
               for(lc =0 ; lc < 5 ;lc++){
                 Debug.Log(test_array[lc]);
               }
+
+              // ---
               lc = 5;
               do{
                 Debug.Log("逆順");
@@ -51,6 +55,7 @@ public class Test : MonoBehaviour
 
 
        }
+
 
        void Start()
        {
